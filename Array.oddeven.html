@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo1"></p>
+    <p id ="demo2"></p>
+    <script>
+        const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        let even  = numbers.filter( name => name%2==0) ;
+        document.getElementById("demo1").innerHTML="Array of even numbers is : " + "[ "+even+ " ]" ;
+        //console.log(even)
+        let odd = numbers.filter( name => name%2!=0) ;
+        document.getElementById("demo2").innerHTML="Array of odd numbers is : " + "[ "+odd+ " ]" ;
+
+
+    </script>
+</body>
+</html>

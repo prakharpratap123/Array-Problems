@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The minimum number from the given array is : <span id="demo1"></span></p>
+    <p>The maximum number from the given array is : <span id="demo2"></span></p>
+    <script>
+        //Find minimum and maximum number.
+        const marks = [48,7,96,83,16,106,5,81,56];
+
+        marks.sort(function myFun1(a,b) {return a-b});
+        document.getElementById("demo1").innerHTML= marks[0];
+        document.getElementById("demo2").innerHTML= marks[marks.length-1];
+
+      //This an also be done but it does not make any sense (Jab ek bar me arrange ho gya hai to first & last element se hi minimum and maximum number aa jaega . Dubara descending order ka code likh k sort karne ka koi jarurat hai hi nhi.)
+        // marks.sort(function (a,b) {return b-a});
+        // document.getElementById("demo2").innerHTML= marks[0];
+        
+
+    </script>
+</body>
+</html>

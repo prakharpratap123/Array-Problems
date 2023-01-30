@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <script>
+        const fruits = new Array ("Banana","Apple","Guava","Grapes","Berry");
+        let text = "<ul>";
+        let frulen= fruits.length;
+        for (let i = 0; i < frulen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+            }
+            text+="</ul>";
+            document.getElementById("demo").innerHTML = text;
+
+        let text1 = "<ol>";
+        let frulen1= fruits.length;
+        for (let i = 0; i < frulen; i++) {
+            text1 += "<li>" + fruits[i] + "</li>";
+            }
+            text1+="</ol>";
+            document.getElementById("demo1").innerHTML = text1;
+    </script>
+</body>
+</html>

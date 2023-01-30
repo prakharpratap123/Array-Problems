@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      The minimum and maximum number from the given array of numbers are
+      <span id="demo1"></span> & <span id="demo2"></span> respectively.
+    </p>
+    <script>
+        const numbers =[45,34,78,65,88,99,18,48,26,73]
+        document.getElementById("demo1").innerHTML = myFun1(numbers);
+        document.getElementById("demo2").innerHTML = myFun2(numbers);
+        function myFun1(anyname1){
+            return Math.min.apply(null,anyname1);
+        }
+        function myFun2(anyname2){
+            return Math.max.apply(null,anyname2);
+        }
+    </script>
+  </body>
+</html>

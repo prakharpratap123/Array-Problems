@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const names = ["Ria","Roy","Ram","Kia","Sid"];
+        //Using function
+        let list = "<ol>";
+             names.forEach(myFun);
+             list+="</ol>";
+             function myFun(va) {
+                list+= "<li>" + va + "</li>";
+                }
+                document.getElementById("demo").innerHTML = list;
+
+
+        //Using Arrow function
+                let list1 = "<ul>";
+                    names.forEach((name) => {
+                        list1+= "<li>" + name + "</li>";
+                    });
+                    list1+="</ul>"
+                    document.getElementById("demo1").innerHTML = list1;
+
+ 
+    </script>
+</body>
+</html>

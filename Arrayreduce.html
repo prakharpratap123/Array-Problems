@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Reduce Function</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const numbers = [ 12,16,21,75,45,23];
+        let sum1 = numbers.reduce(myFun);
+        function myFun(total,value ){
+            return total + value;
+        }
+        document.getElementById("demo1").innerHTML= "The sum of numbers is :" +sum1;
+        //We Can Also Assign Some Initial Value To The Sum.
+        let sum2 = numbers.reduce(myFunc, 19);
+        function myFunc(total,value){
+            return total + value;
+        }
+        document.getElementById("demo2").innerHTML= "The sum of numbers is :" +sum2;
+
+        let sum3 = numbers.reduceRight(myFunct, 28);
+        function myFunct(total,value){
+            return total + value;
+        }
+        document.getElementById("demo3").innerHTML= "The sum of numbers is :" +sum3;
+    </script>
+</body>
+</html>

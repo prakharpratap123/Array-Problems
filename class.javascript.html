@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let name = "Prakhar";
+      let fruit1 = "Banana";
+      let fruit2 = "Orange";
+      let myHtml = ` Hello ${name} !
+     <h1> This is a heading. </h1>
+     <p> Children love eating ${fruit1} & ${fruit2}.</p> `;
+      console.log(myHtml.replace("Children", "Kids"));
+      console.log(myHtml.charAt(1));
+      console.log(myHtml.indexOf("H"));
+
+      document.body.innerHTML = myHtml;
+      //Logical OR
+      //  let age = 19;
+      //  let drives = true;
+      //  if ( drives && age >=18 ) {
+      //     console.log('you can drive');
+      //  }
+      //  else {
+      //     console.log('you can\'t drive');
+      //  }
+
+// <!----------------------------------------------------------------------------------------->
+
+    //Logical AND
+
+    //   let age1 = 26;
+    //   let drives1 = false;
+    //   if (drives1 || age1 >= 18) {
+    //     console.log("you can drive");
+    //   } else {
+    //     console.log("you can't drive");
+    //   }
+
+    // <!----------------------------------------------------------------------------------------->
+    // Ternary Operator
+    // let age2 = 26;
+    // console.log(age2==16? "Age is 16." : "Age is not 16.")
+
+
+    // <!----------------------------------------------------------------------------------------->
+
+    // let age3=24 ;
+    // if(age3>0 && age3< 5){
+    //     console.log('Baby age')
+    // }
+    // else if(age3>=5 && age3< 10){
+    //     console.log('Kid age')
+    // }
+    // else if (age3>=10 && age3< 15){
+    //     console.log('Adolescent age')
+    // }
+    // else if(age3>=15 && age3< 18){
+    //     console.log('Young adult age')
+    // }
+    // else if(age3>=18 && age3< 60){
+    //     console.log('Adult age')
+    // }
+    // else{
+    //     console.log('Senior adult age')
+
+    // } 
+
+    // <!----------------------------------------------------------------------------------------->
+    // For Loop
+    
+//      for ( i = 1 ; i  < 20 ; i++) {
+//   console.log(i)
+//  }
+// <!----------------------------------------------------------------------------------------->
+    // While Loop
+    // i++ or i+=1 or i= i+1 ; all three are identical expression in terms of meaning.
+    let j=0;
+     while (j<10) {
+        console.log(j+1)
+        j=j+1;
+     } 
+    </script>
+  </body>
+</html>
